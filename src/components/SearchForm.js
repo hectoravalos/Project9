@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PhotoContainer from './PhotoContainer';
-import SearchResults from './SearchResults';
+// import PhotoContainer from './PhotoContainer';
+// import SearchResults from './SearchResults';
 
 class SearchForm extends Component{
 
