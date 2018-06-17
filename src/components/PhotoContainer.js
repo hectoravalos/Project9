@@ -24,11 +24,11 @@ class PhotoContainer extends Component {
           loading: false
         });
       })
-      .catch(function (error) {
-        
-          'Error fetching and parsing data'
-        
-      });
+      
+         .catch(function (error) {
+          alert("Error fetching and parsing data:{ error }");
+        });
+      
   }
 
   render() {
