@@ -3,6 +3,7 @@ import PhotoList from './PhotoList';
 import axios from 'axios';
 import apiKey from './config.js';
 
+
 const key = apiKey;
 
 class PhotoContainer extends Component {
@@ -26,7 +27,7 @@ class PhotoContainer extends Component {
       })
       
          .catch(function (error) {
-          alert("Error fetching and parsing data:{error}");
+          alert("Error fetching and parsing data");
         });
       
   }
@@ -37,10 +38,9 @@ class PhotoContainer extends Component {
         <h2>{this.props.title}</h2>
           {
             (this.state.loading)
-            ? <p>Data is loading...</p>
+            ? <p>Data is loading..</p>
             : <PhotoList data={this.state.pics}/>
           }
-
       </div>
     );
   }
